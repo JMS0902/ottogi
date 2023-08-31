@@ -1,0 +1,225 @@
+/* Mobile 크기 0~639 */
+@media screen and (max-width:640px) {
+div.career_btn{width: 100%; border-bottom: 1px solid #ddd;}
+div.career{width: 100%; margin: 0 auto;}
+  
+/* spot */
+.spot_inner{text-align: center; color: #fff;}
+.spot_inner > h2{font-size: 17px; letter-spacing: 0;}
+.spot_inner > h3{font-size: 25px; line-height: 1; padding-top: 55px; background: url(../images/bul_vlineheader.png)  no-repeat center 7px;}
+.spot_inner > p{display: none;}
+
+/* sub_navi */
+.sub_navi_inner > ul{width: 100%;}
+.sub_navi_inner > ul::after{content: ""; display: block; clear: both;}
+
+.sub_navi_inner > ul > li {float: left; position: relative;}
+.sub_navi_inner > ul > li > a{display: block; color: #fff; height: 50px; line-height: 50px;  background: #5a5a5a; padding: 0 25px; border-right: 1px solid rgba(255,255,255,0.5); width: 100px; background: url(../images/bul_down.png) no-repeat 88% 50%; font-size: 16px; letter-spacing: 0;}
+.sub_navi_inner > ul > li:first-child > a{background: url(../images/icon_home.png) no-repeat 50% 50%; width: 20px; height: 50px; text-indent: -9999px; overflow: hidden; border-left: 1px solid rgba(255,255,255,0.5);}
+
+.sub_navi_inner > ul > li.on > ul{display: block; }
+.sub_navi_inner > ul > li > ul{position: absolute; left: 0; top: 56px; width: 100%; background: #fff; padding: 10px 0; box-shadow: 1px 2px 4px #bebebe; display: none; transition: height 0.3s linear 0s; z-index: 10;}
+.sub_navi_inner > ul > li > ul > li > a{display: block; line-height: 40px; text-align: center; font-size: 15px; letter-spacing: 0;}
+.sub_navi_inner > ul > li > ul > li > a:hover{color: #dc2c34; font-weight: bold;}
+
+/* content */
+.career_btn > ul{display: flex; justify-content: center; width: 100%; margin: 0 auto;}
+.career_btn > ul > li{position: relative; flex: 1; text-align: center;}
+.career_btn > ul > li.on::after {content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background: #dc2c34;}
+.career_btn > ul > li:hover::after{content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background: #dc2c34;}
+.career_btn > ul > li > a{font-size: 15px;
+overflow: hidden; display: block;  line-height: 70px; box-sizing: border-box;}
+.career_btn > ul > li.on > a{color: #dc2c34; font-weight: 600;}
+.career_btn > ul > li > a::after{content: ""; position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 1px; height: 25px; background: #ddd;}
+.career_btn > ul > li:last-child > a::after{display: none;}
+
+/* career */
+.path{width: 96%; margin: 0 auto; text-align: right; padding-top: 24px; letter-spacing: 0;}
+
+.career > h4{position: relative; font-size: 30px; line-height: 36px; text-align: center; margin: 60px 0 40px;}
+.career > h4::after{content: ""; position: absolute; display: block; width: 40px; height: 1px; left: 50%; top: 60px; transform: translateX(-50%); background: #dc2c34;}
+
+.career > dl > dt{margin-bottom: 25px; text-align: center; font-size: 16px; color: #666;}
+.career > dl > dd{text-align: center; font-size: 12px; letter-spacing: 0.2px; color: #666; padding: 0 10px;}
+.career > p{text-align: center; margin-top: 20px; letter-spacing: 0; color: #666; font-size: 15px;}
+
+.career > ul{display: flex; justify-content: space-between;   margin: 30px 0; flex-flow: column wrap;}
+.career > ul > li{padding-left: 220px; background: #dc2c34 url(../images/img_recruit1.jpg) no-repeat 0 0; width: 300px; height: 220px; margin: 10px auto; background-size: 220px;}
+.career > ul >li:last-child{background: #777 url(../images/img_recruit2.jpg)no-repeat 0 0; background-size: 220px;}
+
+.career > ul > li > ul{height: 220px; padding: 30px 30px 0; box-sizing: border-box;}
+.career > ul > li > ul > li{color: #fff; padding: 25px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.295); letter-spacing: 0; font-size: 12px; font-weight: 100;}
+.career > ul > li:last-child > ul > li{padding: 20px 0;}
+.career > ul > li > ul > li:last-child{border: none;}
+.career > ul > li > ul > li > strong{font-size: 15px; font-weight: 500; height: 50px;  padding-right: 40px; padding-left: 30px; float: left;}
+.career > ul > li:last-child > ul > li > strong{padding-left: 25px;}
+.career > ul > li:last-child > ul > li:first-child > strong{padding-left: 15px;}
+
+/* table */
+.career_notice{width: 100%; border-collapse: collapse; border-spacing: 0; border: none; margin: 0 auto; letter-spacing: 0;}
+
+.career_notice > tbody td{text-align: center; font-size: 14px; color: #666; line-height: 60px; border-bottom: 1px solid #ddd;}
+.career_notice > tbody tr:first-child{ border-top: 1px solid #ddd;}
+.career_notice > tbody td:first-child{display: none;}
+.career_notice > tbody td:nth-child(2){text-align: left; width: 70%; padding-left: 20px;}
+.career_notice > tbody td:nth-child(2) > a:hover{color: #dc2c34;}
+.career_notice > tbody td:last-child{width: 15%; text-align: left;}
+
+/* table 버튼 */
+.career_slide_roll{padding: 70px 0; display: flex; justify-content: center;}
+.career_slide_roll > ul{}
+.career_slide_roll > ul > li{display: inline-block; vertical-align: top; height: 33px;}
+.career_slide_roll > ul > li > a{display: block; font-size: 15px; padding: 0 10px; line-height: 29px; font-weight: bold;}
+.career_slide_roll > ul > li:active > a, .career_slide_roll > ul > li.on > a{background-color: #dc2c34;
+  border: 1px solid #dc2c34;
+  border-radius: 100%; color: #fff;}
+.career_slide_roll  a.btn_next{display: block; text-indent: -9999px; overflow: hidden; background: url(../images/chevron_right.png) no-repeat 50%; width: 10px; height: 30px;}
+}
+  
+/* Tablet 크기 640~1024 */
+@media screen and (min-width:641px) and (max-width:1024px) {
+
+/* spot */
+.spot_inner{text-align: center; color: #fff;}
+.spot_inner > h2{font-size: 17px; letter-spacing: 0;}
+.spot_inner > h3{font-size: 30px; line-height: 1; padding-top: 55px; background: url(../images/bul_vlineheader.png)  no-repeat center 7px;}
+.spot_inner > p{display: none;}
+
+/* sub_navi */
+.sub_navi_inner > ul{width: 100%;}
+.sub_navi_inner > ul::after{content: ""; display: block; clear: both;}
+
+.sub_navi_inner > ul > li {float: left; position: relative;}
+.sub_navi_inner > ul > li > a{display: block; color: #fff; height: 56px; line-height: 56px; background: #5a5a5a; padding: 0 25px; border-right: 1px solid rgba(255,255,255,0.5); width: 100px; background: url(../images/bul_down.png) no-repeat 88% 50%; font-size: 16px; letter-spacing: 0;}
+.sub_navi_inner > ul > li:first-child > a{background: url(../images/icon_home.png) no-repeat 50% 50%; width: 20px; height: 55px; text-indent: -9999px; overflow: hidden; border-left: 1px solid rgba(255,255,255,0.5);}
+
+.sub_navi_inner > ul > li.on > ul{display: block; }
+.sub_navi_inner > ul > li > ul{position: absolute; left: 0; top: 56px; width: 100%; background: #fff; padding: 10px 0; box-shadow: 1px 2px 4px #bebebe; display: none; transition: height 0.3s linear 0s; z-index: 10;}
+.sub_navi_inner > ul > li > ul > li > a{display: block; line-height: 40px; text-align: center; font-size: 15px; letter-spacing: 0;}
+.sub_navi_inner > ul > li > ul > li > a:hover{color: #dc2c34; font-weight: bold;}
+
+/* content */
+.career_btn > ul{display: flex; justify-content: center; width: 100%; margin: 0 auto;}
+.career_btn > ul > li{position: relative; flex: 1; text-align: center;}
+.career_btn > ul > li.on::after {content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background: #dc2c34;}
+.career_btn > ul > li:hover::after{content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background: #dc2c34;}
+.career_btn > ul > li > a{font-size: 16px;
+overflow: hidden; display: block;  padding: 40px 0 30px; box-sizing: border-box;}
+.career_btn > ul > li > a::after{content: ""; position: absolute; right: 0; top: 42%; width: 1px; height: 25px; background: #ddd;}
+.career_btn > ul > li:last-child > a::after{display: none;}
+
+/* career */
+.path{width: 96%; margin: 0 auto; text-align: right; padding-top: 24px;}
+
+.career > h4{position: relative; font-size: 30px; line-height: 36px; text-align: center; margin: 60px 0 40px;}
+.career > h4::after{content: ""; position: absolute; display: block; width: 40px; height: 1px; left: 50%; top: 60px; transform: translateX(-50%); background: #dc2c34;}
+
+.career > dl > dt{margin-bottom: 25px; text-align: center; font-size: 16px; color: #666;}
+.career > dl > dd{text-align: center; font-size: 12px; letter-spacing: 0.2px; color: #666;}
+.career > p{text-align: center; margin-top: 20px; letter-spacing: 0; color: #666; font-size: 17px;}
+
+.career > ul{display: flex; justify-content: space-between;   margin: 60px 10px 80px;}
+.career > ul > li{flex: 1; padding-left: 220px; background: #dc2c34 url(../images/img_recruit1.jpg) no-repeat 0 0; width: 420px; height: 220px; margin: 0 10px; background-size: 220px;}
+.career > ul >li:last-child{background: #777 url(../images/img_recruit2.jpg)no-repeat 0 0; background-size: 220px;}
+
+.career > ul > li > ul{height: 220px; padding: 30px 25px 0; box-sizing: border-box;}
+.career > ul > li > ul > li{color: #fff; padding: 25px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.295); letter-spacing: 0; font-size: 11px; font-weight: 100;}
+.career > ul > li > ul > li:last-child{border: none;}
+.career > ul > li > ul > li > strong{font-size: 16px; font-weight: 500; height: 50px;  padding-right: 25px; padding-left: 15px; float: left;}
+.career > ul > li:last-child > ul > li:first-child > strong{padding-left: 6px;}
+
+.career_notice{width: 96%; min-width: 970px; border-collapse: collapse; border-spacing: 0; border: none; margin: 0 auto; letter-spacing: 0;}
+
+.career_notice > tbody td{text-align: center; font-size: 15px; color: #666; padding: 15px 5px; border-bottom: 1px solid #ddd;}
+.career_notice > tbody tr:first-child{ border-top: 1px solid #ddd;}
+.career_notice > tbody td:first-child{width: 10%;}
+.career_notice > tbody td:nth-child(2){text-align: left; width: 78%;}
+.career_notice > tbody td:nth-child(2) > a:hover{color: #dc2c34;}
+.career_notice > tbody td:last-child{width: 15%; text-align: left;}
+
+/* table 버튼 */
+.career_slide_roll{padding: 70px 0; display: flex; justify-content: center;}
+.career_slide_roll > ul{}
+.career_slide_roll > ul > li{display: inline-block; vertical-align: top; height: 33px;}
+.career_slide_roll > ul > li > a{display: block; font-size: 15px; padding: 0 10px; line-height: 29px; font-weight: bold;}
+.career_slide_roll > ul > li:active > a, .career_slide_roll > ul > li.on > a{background-color: #dc2c34;
+  border: 1px solid #dc2c34;
+  border-radius: 100%; color: #fff;}
+.career_slide_roll  a.btn_next{display: block; text-indent: -9999px; overflow: hidden; background: url(../images/chevron_right.png) no-repeat 50%; width: 10px; height: 30px;}
+}
+
+/* PC 크기 1025~최대 */
+@media screen and (min-width:1025px){
+
+/* spot */
+.spot{background: url(../images/visual_01.jpg) no-repeat 50% 0;}
+.spot_inner{text-align: center; color: #fff; text-shadow: 1px 1px 2px rgba(0,0,0,0.7);}
+.spot_inner > h2{font-size: 20px;}
+.spot_inner > h3{font-size: 50px; line-height: 1; padding: 47px 0 25px; background: url(../images/bul_vlineheader.png)  no-repeat center 7px;}
+.spot_inner > p{font-size: 16px; line-height: 1.5; letter-spacing: 0;}
+
+/* sub_navi */
+.sub_navi_inner > ul{width: 100%;}
+.sub_navi_inner > ul::after{content: ""; display: block; clear: both;}
+
+.sub_navi_inner > ul > li {float: left; position: relative;}
+.sub_navi_inner > ul > li > a{display: block; color: #fff; height: 56px; line-height: 56px; background: #5a5a5a; padding: 0 25px; border-right: 1px solid rgba(255,255,255,0.5); width: 100px; background: url(../images/bul_down.png) no-repeat 88% 50%; font-size: 16px; letter-spacing: 0;}
+.sub_navi_inner > ul > li:first-child > a{background: url(../images/icon_home.png) no-repeat 50% 50%; width: 20px; height: 55px; text-indent: -9999px; overflow: hidden; border-left: 1px solid rgba(255,255,255,0.5);}
+
+.sub_navi_inner > ul > li.on > ul{display: block; }
+.sub_navi_inner > ul > li > ul{position: absolute; left: 0; top: 56px; width: 100%; background: #fff; padding: 10px 0; box-shadow: 1px 2px 4px #bebebe; display: none; transition: height 0.3s linear 0s; z-index: 10;}
+.sub_navi_inner > ul > li > ul > li > a{display: block; line-height: 40px; text-align: center; font-size: 15px; letter-spacing: 0;}
+.sub_navi_inner > ul > li > ul > li > a:hover{color: #dc2c34; font-weight: bold;}
+
+/* content */
+.career_btn > ul{display: flex; justify-content: center; width: 1201px; margin: 0 auto;}
+.career_btn > ul > li{position: relative; flex: 1; text-align: center;}
+.career_btn > ul > li.on::after {content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background: #dc2c34;}
+.career_btn > ul > li:hover::after{content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background: #dc2c34;}
+.career_btn > ul > li > a{font-size: 16px;
+overflow: hidden; display: block;  padding: 40px 0 30px; box-sizing: border-box;}
+.career_btn > ul > li > a::after{content: ""; position: absolute; right: 0; top: 42%; width: 1px; height: 25px; background: #ddd;}
+.career_btn > ul > li:last-child > a::after{display: none;}
+
+/* career */
+.path{width: 1201px; margin: 0 auto; text-align: right; padding-top: 24px;}
+
+.career > h4{position: relative; font-size: 30px; line-height: 36px; text-align: center; margin: 60px 0 50px;}
+.career > h4::after{content: ""; position: absolute; display: block; width: 40px; height: 1px; left: 50%; top: 65px; transform: translateX(-50%); background: #dc2c34;}
+
+.career > dl > dt{margin-bottom: 25px; text-align: center; font-size: 16px; color: #666;}
+.career > dl > dd{text-align: center; font-size: 12px; letter-spacing: 0.2px; color: #666;}
+.career > p{text-align: center; margin-top: 20px; letter-spacing: 0; color: #666;}
+
+.career > ul{display: flex; margin-top: 49px;}
+.career > ul >li{flex: 1; padding-left: 300px; background: #dc2c34 url(../images/img_recruit1.jpg) no-repeat 0 0; width: 600px; height: 300px;}
+.career > ul >li:last-child{background: #777 url(../images/img_recruit2.jpg)no-repeat 0 0;}
+
+.career > ul > li > ul{padding: 27px 34px 34px;}
+.career > ul > li > ul > li{width: 100%; color: #fff; padding: 40px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.5); letter-spacing: 0;}
+.career > ul > li > ul > li:last-child{border: none;}
+.career > ul > li > ul > li > strong{font-size: 20px; font-weight: 600; height: 50px;  padding-right: 30px; padding-left: 15px; float: left;}
+
+.career > ul > li:last-child > ul > li:first-child > strong{padding-left: 0px;}
+
+/* table */
+.career_notice{width: 100%; margin-top: 36px; border-collapse: collapse; border-spacing: 0; border: none;}
+
+.career_notice > tbody td{text-align: center; font-size: 15px; color: #666; padding: 15px 5px; border-bottom: 1px solid #ddd;}
+.career_notice > tbody tr:first-child{ border-top: 1px solid #ddd;}
+.career_notice > tbody td:first-child{width: 10%;}
+.career_notice > tbody td:nth-child(2){text-align: left; width: 80%;}
+.career_notice > tbody td:nth-child(2) > a:hover{color: #dc2c34;}
+
+/* table 버튼 */
+.career_slide_roll{padding: 70px 0; display: flex; justify-content: center;}
+.career_slide_roll > ul{}
+.career_slide_roll > ul > li{display: inline-block; vertical-align: top; height: 33px;}
+.career_slide_roll > ul > li > a{display: block; font-size: 15px; padding: 0 10px; line-height: 29px; font-weight: bold;}
+.career_slide_roll > ul > li:active > a, .career_slide_roll > ul > li.on > a{background-color: #dc2c34;
+  border: 1px solid #dc2c34;
+  border-radius: 100%; color: #fff;}
+.career_slide_roll  a.btn_next{display: block; text-indent: -9999px; overflow: hidden; background: url(../images/chevron_right.png) no-repeat 50%; width: 20px; height: 30px;}
+.career_slide_roll  a.btn_prev{display: block; background: url(../images/chevron_left.png) no-repeat 50%; text-indent: -9999px; overflow: hidden; width: 20px; height: 30px;}
+}
+

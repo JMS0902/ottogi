@@ -1,0 +1,154 @@
+/* common */
+body{font-size: 14px; font-family: 'OTTOGISans', 'NanumBarunGothic', Arial, sans-serif; letter-spacing: -1px;}
+a{text-decoration: none; color: #333;}
+a:hover{text-decoration: none; color: #000;}
+
+@font-face {
+  font-family: 'OTTOGISans';
+  src: url(../font/OTTOGISans_Light.eot);
+  src: url(../font/OTTOGISans_Light.eot?#iefix) format('embedded-opentype'),
+    url(../font/OTTOGISans_Light.woff) format('woff'),
+    url(../font/OTTOGISans_Light.ttf) format('truetype');
+}
+
+/* layout */
+/* Mobile 크기 0~639 */
+@media screen and (max-width:640px) {
+
+  body.on{position: fixed; left: 0; top: 0; width: 100%; height: 100%;}
+
+  div.bg.on{z-index: 90; position: absolute; left: 0; top: 0; right: 0; bottom: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8);}
+
+  a{color: #333;}
+
+  #header{position: relative; width: 100%; height: 94px; z-index: 40;}
+  .header_wrap{position: absolute; left: 0; width: 100%; height: 94px; background: #fff url(../images/header.png) repeat-x 0 0; transition: height 0.2s linear 0s;}
+  .header_inner{position: relative; width: 100%;  height: 94px; margin: 0 auto;}
+  
+  .main_visual{position: relative; width: 100%; height: 500px; z-index: 30; overflow: hidden;}
+  
+  #container{width: 100%;}
+  .content1{width: 100%; margin: 0 auto; margin-top: 111px;}
+  .content2{width: 100%; margin: 0 auto; margin-top: 95px;}
+  .content3{width: 100%; margin: 0 auto; margin-top: 97px;}
+  .content4{position: relative; width: 100%; height: 190px; margin: 0 auto; margin-top: 111px; left: 0; overflow: hidden;}
+  .content5{width: 100%; margin: 0 auto; margin-top: 113px;}
+    .content5_inner{position: relative; width: 100%; margin: 0 auto;}
+  .content6{width: 100%; margin: 0 auto; margin-top: 130px;}
+  .content7{width: 100%; margin: 0 auto; margin-top: 170px;}
+
+  /* sub1, 2 공통 */
+  .spot{width: 100%; height: 182px; background: url(../images/visual_01_m.png)no-repeat 50% 0;}
+  .spot_inner{width: 100%; margin: 0 auto; padding-top: 40px; text-align: center; color: #fff;}
+  .sub_navi{width: 100%; background-color: #dc2c34; height: 50px;}
+  .sub_navi_inner{width: 100%;  margin: 0 auto;}
+  #content{width: 100%;}
+
+  /* sub2 */
+  .comment{width: 100%; background: url(../images/counseling_bg.jpg)no-repeat 50%; background-size: cover; padding: 170px 0 120px;}
+    .comments_inner{width: 95%;  color: #fff; margin: 0 auto;}
+  .comment_form{width: 100%; margin: 0 auto;}
+  .procedure{width: 100%; background: #fafafa; padding: 30px 0;}
+   .procedure_inner{width: 100%; margin: 0 auto; }
+  .standard{width: 100%; margin: 0 auto;  padding: 60px 0; text-align: center; letter-spacing: 0;}
+  
+  #footer{position: relative; width: 100%; height: 470px;}
+  .footer_top{width: 100%; margin-top: 70px; border-top: 1px solid #e4e4e4;}
+  .footer_top_inner{width: 100%; margin: 0 auto;}
+  .footer_bottom{width: 100%;}
+  .footer_bottom_inner{width: 100%; margin: 0 auto; padding-top: 30px;}
+}    
+
+/* Tablet 크기 640~1024 */
+@media screen and (min-width:641px) and (max-width:1024px) {
+  /* 헤더 */
+#header{position: relative; width: 100%; height: 191px; z-index: 40; }
+.header_wrap{position: absolute; width: 100%; height: 191px; background: #fff url(../images/header.png) repeat-x 0 0; transition: height 0.2s linear 0s; overflow: hidden;}
+.header_inner{position: relative; width: 96%; min-width: 986px;  height: 191px; margin: 0 auto;}
+
+/* 배너 */
+.main_visual{position: relative; width: 100%; height: 711px; z-index: 30; overflow: hidden;}
+
+/* 컨테이너 */
+#container{width: 100%;}
+.content1{width: 100%; margin: 0 auto; margin-top: 111px;}
+.content2{width: 100%; min-width: 986px;  margin: 0 auto; margin-top: 212px;}
+.content3{width: 100%; margin: 0 auto; margin-top: 97px;}
+.content4{position: relative; width: 100%; height: 190px; margin: 0 auto; margin-top: 111px; overflow: hidden;}
+.content5{width: 100%; margin: 0 auto; margin-top: 113px;}
+    .content5_inner{position: relative; width: 100%; margin: 0 auto;}
+.content6{width: 96%; min-width: 986px;  margin: 0 auto; margin-top: 145px;}
+.content7{width: 96%; min-width: 986px; margin: 0 auto; margin-top: 184px;}
+
+/* sub1, 2 공통 */
+.spot{width: 100%; height: 182px; background: url(../images/visual_01_t.jpg)no-repeat 50% 0;}
+.spot_inner{width: 96%; margin: 0 auto; padding-top: 40px;}
+.sub_navi{width: 100%; background-color: #dc2c34;}
+.sub_navi_inner{width: 96%; margin: 0 auto;}
+#content{width: 100%;}
+div.career_btn{width: 100%; min-width: 986px; border-bottom: 1px solid #ddd;}
+div.career{width: 100%; min-width: 986px; margin: 0 auto;}
+
+/* sub2 */
+.comment{width: 100%; background: url(../images/counseling_bg.jpg)no-repeat 50%; background-size: cover; padding: 170px 0 125px;}
+.comments_inner{width: 96%; min-width: 986px; color: #fff; border: 1px solid rgb(255, 94, 77); margin: 0 auto;}
+.comment_form{width: 96%; min-width: 986px; margin: 0 auto;}
+.procedure{width: 100%; background: #fafafa; padding: 30px 0;}
+.procedure_inner{width: 96%; min-width: 986px;margin: 0 auto; }
+.standard{width: 96%; min-width: 986px; margin: 0 auto;  padding: 60px 0; text-align: center; letter-spacing: 0;}
+
+/* 푸터 */
+#footer{position: relative; width: 100%; height: 216px;}
+.footer_top{width: 100%; margin-top: 185px; background: #f7f7f7; border-top: 1px solid #e4e4e4; border-bottom: 1px solid #e4e4e4;;}
+.footer_top_inner{width: 96%; min-width: 986px; margin: 0 auto;}
+.footer_bottom{width: 100%; height: 181px;}
+.footer_bottom_inner{width: 96%; min-width: 986px; margin: 0 auto;padding-top: 30px;}
+}
+  
+/* PC 크기 1025~최대 */
+@media screen and (min-width:1025px) {
+
+/* 헤더 */
+#header{position: relative; width: 100%; height: 191px; z-index: 40; }
+  .header_wrap{position: absolute; width: 100%; height: 191px; background: #fff url(../images/header.png) repeat-x 0 0; transition: height 0.2s linear 0s; overflow: hidden;}
+
+  .header_inner{position: relative; width: 1201px; height: 191px; margin: 0 auto;}
+
+/* 배너 */
+.main_visual{position: relative; width: 100%; min-width: 1024px; height: 711px; z-index: 30;}
+
+/* 컨테이너 */
+#container{width: 100%;}
+  .content1{width: 1201px; margin: 0 auto; margin-top: 111px;}
+  .content2{width: 1201px; margin: 0 auto; margin-top: 212px;}
+  .content3{width: 1201px; margin: 0 auto; margin-top: 97px;}
+  .content4{position: relative; width: 100%; height: 190px; margin: 0 auto; margin-top: 111px;  left: 0; overflow: hidden;}
+  .content5{width: 100%; margin: 0 auto; margin-top: 113px;}
+  .content5_inner{position: relative; width: 1201px; margin: 0 auto;}
+  .content6{width: 1201px; margin: 0 auto; margin-top: 145px; }
+  .content7{width: 1201px; margin: 0 auto; margin-top: 184px; ;}
+
+  /* sub1, 2 공통 */
+  .spot{width: 100%; height: 430px; background: url(../images/visual_01.jpg)no-repeat 50% 0;}
+  .spot_inner{width: 1201px; margin: 0 auto; padding-top: 102px;}
+  .sub_navi{width: 100%; background-color: #dc2c34;}
+  .sub_navi_inner{width: 1201px; margin: 0 auto;}
+  #content{width: 100%;}
+  div.career_btn{width: 100%; border-bottom: 1px solid #ddd;}
+  div.career{width: 1201px; margin: 0 auto;}
+
+  /* sub2 */
+.comment{width: 100%; background: url(../images/counseling_bg.jpg)no-repeat 50%; background-size: cover; padding: 170px 0 125px;}
+.comments_inner{width: 1201px;  color: #fff; border: 1px solid rgb(255, 94, 77); margin: 0 auto;}
+.comment_form{width: 1201px; margin: 0 auto;}
+.procedure{width: 100%; background: #fafafa; padding: 30px 0;}
+.procedure_inner{width: 1201px; margin: 0 auto; }
+.standard{width: 1201px; margin: 0 auto;  padding: 60px 0; text-align: center; letter-spacing: 0;}
+
+/* 푸터 */
+#footer{position: relative; width: 100%; height: 216px;}
+.footer_top{width: 100%; margin-top: 185px; background: #f7f7f7; border-top: 1px solid #e4e4e4; border-bottom: 1px solid #e4e4e4;;}
+.footer_top_inner{width: 1201px; margin: 0 auto;}
+.footer_bottom{width: 100%; height: 181px;}
+.footer_bottom_inner{width: 1201px; margin: 0 auto; padding-top: 30px;}
+}

@@ -1,0 +1,135 @@
+/* Mobile 크기 0~639 */
+@media screen and (max-width:640px) {
+
+/* footer */
+.footer_top_inner > ul:first-of-type {display: flex; flex-flow: row wrap; width: 100%;}
+.footer_top_inner > ul:first-of-type > li{width:50%}
+.footer_top_inner::after{content: ""; display: block; clear: both;}
+.footer_top_inner > ul:first-of-type > li > a{display: block; font-size: 15px; line-height: 60px; text-align: center; border: 1px solid #ddd; color: #333; border-top: none; background: #f7f7f7;}
+
+.footer_top_inner > ul:first-of-type > li:first-child > a{font-weight: bold; border-right: none;}
+.footer_top_inner > ul:first-of-type > li:nth-child(3) > a{border-right: none;}
+.footer_top_inner > ul:first-of-type > li:nth-child(5){width: 100%;}
+
+.footer_top_inner > ul:first-of-type > li:nth-child(1) > a{border-top: 1px solid #ddd;}
+.footer_top_inner > ul:first-of-type > li:nth-child(2) > a{border-top: 1px solid #ddd;}
+
+/* sns 링크 */
+.footer_top_inner > ul:last-of-type{position: relative; display: flex; justify-content: center;}
+.footer_top_inner > ul:last-of-type> li {margin: 10px 5px 0;}
+
+.footer_top_inner > ul:last-of-type> li > a{display: block; width: 35px; height: 35px; text-indent: -9999px; overflow: hidden; margin-top: 13.5px; background: url(../images/f_btn_sns.png) no-repeat 0 0;}
+.footer_top_inner > ul:last-of-type> li > a:hover{background-position-y: -35px;}
+
+.footer_top_inner > ul:last-of-type> li:first-child > a{background-position: 0 0;}
+.footer_top_inner > ul:last-of-type> li:nth-child(2) > a{background-position: -35px 0;}
+.footer_top_inner > ul:last-of-type> li:nth-child(3)> a{background-position: -70px 0;}
+.footer_top_inner > ul:last-of-type> li:last-child > a{background-position: -105px 0;}
+
+
+/* footer_bottom */
+.footer_bottom_inner::after{content: ""; display: block; clear: both;}
+.footer_bottom_inner > .f_logo {margin: 0 auto; background: url(../images/f_logo.jpg) no-repeat 0 0; width: 177px; height: 56px; text-indent: -9999px; overflow: hidden; margin-bottom: 10px;}
+
+.footer_bottom_inner > address{position: relative; text-align: center; margin: 0 auto; color: #555;}
+.footer_bottom_inner > address > span{position: relative; display: inline-block; padding: 0 10px; font-size: 14px; letter-spacing: 0px; line-height: 1.7;}
+
+.footer_bottom_inner > address > span:nth-child(1)::after{content: ""; display: block; width: 1px; height: 13px; position: absolute; left: 100%; top: 50%; background: #555; transform: translateY(-50%);}
+.footer_bottom_inner > address > span:nth-child(2)::after{content: ""; display: block; width: 1px; height: 13px; position: absolute; left: 100%; top: 50%; background: #555; transform: translateY(-50%);}
+
+.footer_bottom_inner > p:last-of-type{font-size: 14px; margin: 15px 0; text-align: center; letter-spacing: 0;  color: #555;}
+
+/* 탑버튼 */
+a.btn_top{position: fixed; right: 30px; bottom: 50px; z-index: 20; opacity: 0; transition: opacity 0.3s linear 0s; background: #fff url(../images/btn_Top.png) no-repeat 0 0; text-indent: -9999px; overflow: hidden; width: 70px; height: 70px; cursor: pointer;}
+
+a.btn_top.on{opacity: 1;}
+a.btn_top.ab{opacity: 1; position: absolute; right: 30px; top: -100px; letter-spacing: 1px;}
+}
+
+/* Tablet 크기 640~1024 */
+@media screen and (min-width:641px) and (max-width:1024px) {
+
+/* footer */
+.footer_top_inner > ul:first-of-type {float: left;}
+.footer_top_inner > ul:first-of-type > li{float: left; margin: 0 20px;}
+.footer_top_inner::after{content: ""; display: block; clear: both;}
+.footer_top_inner > ul:first-of-type > li > a{display: block; font-size: 17px; line-height: 70px;}
+.footer_top_inner > ul:first-of-type > li:first-child > a{font-weight: bold;}
+
+/* sns 링크 */
+.footer_top_inner > ul:last-of-type{position: relative; float: right;}
+.footer_top_inner > ul:last-of-type> li {float: left; margin-left: 15px;}
+
+.footer_top_inner > ul:last-of-type> li > a{display: block; width: 35px; height: 35px; text-indent: -9999px; overflow: hidden; margin-top: 13.5px; background: url(../images/f_btn_sns.png) no-repeat 0 0;}
+.footer_top_inner > ul:last-of-type> li > a:hover{background-position-y: -35px;}
+
+.footer_top_inner > ul:last-of-type> li:first-child > a{background-position: 0 0;}
+.footer_top_inner > ul:last-of-type> li:nth-child(2) > a{background-position: -35px 0;}
+.footer_top_inner > ul:last-of-type> li:nth-child(3)> a{background-position: -70px 0;}
+.footer_top_inner > ul:last-of-type> li:last-child > a{background-position: -105px 0;}
+
+
+/* footer_bottom */
+.footer_bottom_inner::after{content: ""; display: block; clear: both;}
+.footer_bottom_inner > .f_logo {float: left; background: url(../images/f_logo.jpg) no-repeat 0 0; width: 177px; height: 100px; text-indent: -9999px; overflow: hidden;}
+
+.footer_bottom_inner > address > span{position: relative; display: inline-block; padding: 0 17px; font-size: 16px; letter-spacing: 0px; line-height: 1.6;}
+.footer_bottom_inner > address > span:nth-child(1){padding-left: 0;}
+.footer_bottom_inner > address > span:nth-child(4){padding-left: 0;}
+.footer_bottom_inner > address > span:nth-child(6){padding-left: 0;}
+
+.footer_bottom_inner > address > span::after{content: ""; display: block; width: 1px; height: 13px; position: absolute; left: 100%; top: 50%; background: #555; transform: translateY(-50%);}
+
+.footer_bottom_inner > p:last-of-type{font-size: 16px; padding-left: 195px; margin-top: 13px;}
+
+
+/* 탑버튼 */
+a.btn_top{position: fixed; right: 30px; bottom: 50px; z-index: 20; opacity: 0; transition: opacity 0.3s linear 0s; background: #fff url(../images/btn_Top.png) no-repeat 0 0; text-indent: -9999px; overflow: hidden; width: 70px; height: 70px; cursor: pointer;}
+
+a.btn_top.on{opacity: 1;}
+a.btn_top.ab{opacity: 1; position: absolute; right: 30px; top: -100px; letter-spacing: 1px;}
+}
+
+/* PC 크기 1025~최대 */
+@media screen and (min-width:1025px) {
+
+/* footer */
+.footer_top_inner > ul:first-of-type {float: left;}
+.footer_top_inner > ul:first-of-type > li{float: left; margin: 0 20px;}
+.footer_top_inner::after{content: ""; display: block; clear: both;}
+.footer_top_inner > ul:first-of-type > li > a{display: block; font-size: 17px; line-height: 70px;}
+.footer_top_inner > ul:first-of-type > li:first-child > a{font-weight: bold;}
+
+/* sns 링크 */
+.footer_top_inner > ul:last-of-type{position: relative; float: right;}
+.footer_top_inner > ul:last-of-type> li {float: left; margin-left: 15px;}
+
+.footer_top_inner > ul:last-of-type> li > a{display: block; width: 35px; height: 35px; text-indent: -9999px; overflow: hidden; margin-top: 13.5px; background: url(../images/f_btn_sns.png) no-repeat 0 0;}
+.footer_top_inner > ul:last-of-type> li > a:hover{background-position-y: -35px;}
+
+.footer_top_inner > ul:last-of-type> li:first-child > a{background-position: 0 0;}
+.footer_top_inner > ul:last-of-type> li:nth-child(2) > a{background-position: -35px 0;}
+.footer_top_inner > ul:last-of-type> li:nth-child(3)> a{background-position: -70px 0;}
+.footer_top_inner > ul:last-of-type> li:last-child > a{background-position: -105px 0;}
+
+
+/* footer_bottom */
+.footer_bottom_inner::after{content: ""; display: block; clear: both;}
+.footer_bottom_inner > .f_logo {float: left; background: url(../images/f_logo.jpg) no-repeat 0 0; width: 177px; height: 100px; text-indent: -9999px; overflow: hidden;}
+
+.footer_bottom_inner > address > span{position: relative; display: inline-block; padding: 0 17px; font-size: 16px; letter-spacing: 0px; line-height: 1.6;}
+.footer_bottom_inner > address > span:nth-child(1){padding-left: 0;}
+.footer_bottom_inner > address > span:nth-child(4){padding-left: 0;}
+.footer_bottom_inner > address > span:nth-child(6){padding-left: 0;}
+
+.footer_bottom_inner > address > span::after{content: ""; display: block; width: 1px; height: 13px; position: absolute; left: 100%; top: 50%; background: #555; transform: translateY(-50%);}
+
+.footer_bottom_inner > p:last-of-type{font-size: 16px; padding-left: 195px; margin-top: 13px;}
+
+/* 탑메뉴 */
+a.btn_top{position: fixed; right: 30px; bottom: 50px; z-index: 30; opacity: 0; transition: opacity 0.3s linear 0s; background: #fff url(../images/btn_Top.png) no-repeat 0 0; text-indent: -9999px; overflow: hidden; width: 70px; height: 70px; cursor: pointer;}
+
+a.btn_top.on{opacity: 1;}
+a.btn_top.ab{opacity: 1; position: absolute; right: 30px; top: -100px; letter-spacing: 1px;}
+
+}

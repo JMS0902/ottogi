@@ -1,0 +1,22 @@
+body.on{position: fixed; width: 100%; height: 100%; top: 0; left: 0;}
+
+div.bg.on{z-index: 40; position: absolute; left: 0; top: 0; right: 0; bottom: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.1);  backdrop-filter: blur(5px);}
+
+/* 햄버거버튼 */
+div.mobBtn > a{display: block; position: absolute; left: 25px; top: 38px;  z-index: 50;}
+div.mobBtn > a > img{height: 20px;}
+
+/* 전체메뉴 */
+div.mob{overflow: auto; position: absolute; left: 0; top: -500px; width: 100%; height: auto; background: #fff; z-index: 45; transition: opacity 0.4s ease 0s; opacity: 0;}
+div.mob.on{top: 94px; opacity: 1;}
+
+.mob_gnb > ul{width: 100%; letter-spacing: 0; scrollbar-width: none; overflow-x: hidden; overflow-y: auto; min-width: 100px; max-height: 800px; will-change: width, height;}
+.mob_gnb > ul > li > a{display: block; width: 100%; line-height: 70px; font-size: 20px; font-weight: bold; padding-left: 15px; color: #fff; background: #dc2d34 url(../images/mob_menu_open.png) no-repeat 95% 50%; background-size: 25px 25px; border-bottom: 1px solid #f1f1f17c; font-weight: 500; letter-spacing: 0;}
+.mob_gnb > ul > li.on > a{background: #dc2d34 url(../images/mob_menu_close.png) no-repeat 95% 50%; background-size: 25px;}
+.mob_gnb > ul > li > a:hover{background-color: #c2151b;}
+
+.mob_gnb > ul > li .sub_m{width: 100%; height: auto; background: #9a1f24; padding: 25px 35px 20px; display: none; overflow-y: auto;}
+.mob_gnb > ul > li.on .sub_m{display: block;}
+.sub_m > li{margin: 5px 0;}
+.sub_m > li > a{color: #fff; font-size: 18px;display: block; width: 100%; line-height: 40px;}
+.sub_m > li > ul > li > a{position: relative; line-height: 30px; color: #fff; padding-left: 15px;}

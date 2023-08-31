@@ -1,0 +1,192 @@
+/* Mobile 크기 0~639 */
+@media screen and (max-width:640px) {
+
+/* header */
+/* 로고 */
+.logo > a{position: absolute; top: 19px; left: 50%; transform: translateX(-50%);}
+.logo > a > img{height: 63px;}
+
+/* 탑메뉴 */
+.top_menu{display: flex; justify-content: flex-end; position: absolute; top: 34px; right: 23px;}
+.top_menu > dd{margin-left: 10px;}
+
+/* 언어 */
+.top_menu > dd:first-of-type{position: relative; width: 22px;}
+.top_menu > dd:first-of-type > a{display: block; width: 22px; height: 23px; background: url(../images/icon_lang.png) no-repeat 0 0; text-indent: -9999px; overflow: hidden;}
+
+/* 언어 하위메뉴 */
+.top_menu > dd:first-of-type >ul{ position: absolute; left: -35px; margin-top: 10px; z-index: 30; background: #fff; text-align: center; display: none; transition: opacity 200ms linear 0s;}
+.top_menu > dd:first-of-type.on >ul{display: block;}
+.top_menu > dd:first-of-type > ul > li > a{display: block; background: #fff; width: 95px; height: 35px; line-height: 35px; font-size: 15px; font-weight: 600;}
+
+/* 오뚜기챗봇 */
+.top_menu > dd:last-of-type > a{display: block; width: 28px; height: 24px; background: url(../images/top_chat.png) no-repeat 0 0; text-indent: -9999px; overflow: hidden;}
+
+/* 주메뉴 */
+nav.gnb {display: none;}
+}
+
+/* Tablet 크기 640~1024 */
+@media screen and (min-width:641px) and (max-width:1024px) {
+
+/* 모바일 */
+/* 햄버거버튼 */
+div.mobBtn{display: none;}
+
+/* 전체메뉴 */
+div.mob{display: none;}
+
+/* header */
+/* 로고 */
+.logo > a{position: absolute; top: 19px; left: 50%; transform: translateX(-50%);}
+
+/* 탑메뉴 */
+.top_menu{display: flex; justify-content: flex-end; position: absolute; top: 34px; right: 23px;}
+.top_menu > dd{margin-left: 15px;}
+
+/* 언어 */
+.top_menu > dd:first-of-type{position: relative; width: 22px;}
+.top_menu > dd:first-of-type > a{display: block; width: 22px; height: 23px; background: url(../images/icon_lang.png) no-repeat 0 0; text-indent: -9999px; overflow: hidden;}
+
+/* 언어 하위메뉴 */
+.top_menu > dd:first-of-type >ul{ position: absolute; left: -35px; margin-top: 10px; z-index: 30; background: #fff; text-align: center; display: none; transition: opacity 200ms linear 0s;}
+.top_menu > dd:first-of-type.on >ul{display: block;}
+.top_menu > dd:first-of-type > ul > li > a{display: block; background: #fff; width: 95px; height: 35px; line-height: 35px; font-size: 15px; font-weight: 600;}
+
+/* 오뚜기챗봇 */
+.top_menu > dd:last-of-type > a{display: block; width: 28px; height: 24px; background: url(../images/top_chat.png) no-repeat 0 0; text-indent: -9999px; overflow: hidden;}
+
+/* 주메뉴 */
+nav.gnb {position: absolute; width: 100%; top: 115px;}
+nav.gnb > ul {width: 100%; display: flex; justify-content: space-around;}
+
+/* 메뉴 li 6개 */
+nav.gnb>ul>li{flex:1;line-height:77px; text-align:center;}
+nav.gnb>ul>li>a{display:block; height:77px; color:#201e00; font-size:16px; position:relative; transition: color 0.3s linear 0s; letter-spacing: 0;}
+nav.gnb>ul>li>a::after{content:""; position:absolute; left:0; top:50%; transform:translateY(-50%); width:2px; height:14px; background:#8f8f8f;}
+nav.gnb>ul>li:first-child>a::after{display:none;}
+
+/* 메뉴 호버했을 때 */
+nav.gnb>ul>li:hover>a{color:#dc2d34;}
+nav.gnb>ul>li>a::before{content:""; position:absolute; bottom:0; left:50%; width:0; height:0; opacity: 0; transform: translateX(-50%);  background:#dc2d34; transition: width 300ms linear 0s;}
+nav.gnb>ul>li:hover>a::before{width:100%; height:4px; opacity: 1;}
+
+/* 하위ul + 버튼 */
+.gnb>ul>li>div{display: none; position: absolute; left: 0; width: 100%;}
+.gnb > ul > li.on > div {display: block;}
+
+/* 하위 ul */
+.sub {display: flex; justify-content: space-between; margin-top: 40px;}
+/* 하위ul > 각 li */
+.sub > li {flex: 1; display: inline-block; vertical-align: top; text-align: left; border-right: 1px solid #ddd; padding: 0 30px; line-height: 30px; letter-spacing: 0px; height: 220px;}
+.sub > li > a{display: block; color: #dc2d34; font-size: 16px; font-weight: bold; margin-bottom: 7px;}
+.sub > li > ul > li > a{color: #333; font-size: 13px;}
+.sub > li:last-of-type{border: none; padding-right: 0;}
+
+/* 첫번째 소개 li */
+.sub > li:first-of-type{flex: 1.5;} 
+.sub > li:first-of-type > p{font-size: 20px; font-weight: bold; margin-bottom: 6px; letter-spacing: 1px;}
+.sub > li:first-of-type > span:first-of-type{display: block; font-size: 37px; font-weight: bolder; margin-bottom: 20px; letter-spacing: 1px;}
+.sub > li:first-of-type > span:last-of-type{display: block; line-height: 20px; font-size: 12px;}
+
+/* gnb 버튼 */
+.gnb_button{display: flex; justify-content: space-between; margin-top: 20px;}
+.gnb_button>a{flex: 1; display: inline-block; border: 1px solid #bbb; padding: 5px 0; margin: 10px; line-height: 55px; font-size: 15px; letter-spacing: 1px; background: url(../images/gnb_btn.png) no-repeat 75% 50%; padding-right: 15px; transition: all 0.3s; color: #333;}
+.gnb_button > a:hover
+{background-color: #ddd;}
+
+/* 홍보센터 마지막 li */
+.gnb > ul > li:nth-of-type(5) > div > .sub > li:last-of-type{ padding-right: 50px;}
+
+/* 고객서비스 li */
+.gnb > ul > li:last-of-type > div > .sub > li:first-of-type {flex: 1.5;}
+.gnb > ul > li:last-of-type > div > .sub > li:last-of-type {flex: 3.8;}
+/* 고객서비스 gnb */
+.gnb > ul > li:last-of-type > div > .gnb_button > a{flex: 1; display: inline-block; border: 1px solid #bbb; padding: 5px 0; margin: 10px 15px 10px  0; line-height: 55px; font-size: 17px; letter-spacing: 1px; background: url(../images/gnb_btn.png) no-repeat 63% 47%; padding-right: 15px; transition: all 0.3s;}
+.gnb > ul > li:last-of-type > div > .gnb_button > a:last-child{margin-right: 0;}
+.gnb > ul > li:last-of-type > div > .gnb_button > a:hover
+{background-color: #ddd;}
+}
+
+/* PC 크기 1025~최대 */
+@media screen and (min-width:1025px) {
+
+/* 모바일 */
+/* 햄버거버튼 */
+div.mobBtn{display: none;}
+
+/* 전체메뉴 */
+div.mob{display: none;}
+
+/* header */
+/* 로고 */
+.logo > a{position: absolute; top: 19px; left: 50%; transform: translateX(-50%);}
+
+/* 탑메뉴 */
+.top_menu{display: flex; justify-content: flex-end; position: absolute; top: 34px; right: 23px;}
+.top_menu > dd{margin-left: 15px;}
+
+/* 언어 */
+dd.lang{position: relative; width: 22px;}
+dd.lang > a{display: block; width: 22px; height: 23px; background: url(../images/icon_lang.png) no-repeat 0 0; text-indent: -9999px; overflow: hidden;}
+
+/* 언어 하위메뉴 */
+dd.lang > ul{position: absolute; left: -35px; margin-top: 10px; z-index: 50; background: #fff; text-align: center; display: none; transition: opacity 200ms linear 0s;}
+dd.lang.on > ul{display: block;}
+dd.lang > ul > li > a{display: block; background: #fff; width: 95px; height: 35px; line-height: 35px; font-size: 15px; font-weight: 600;}
+
+/* 오뚜기챗봇 */
+.top_menu > dd:last-of-type > a{display: block; width: 28px; height: 24px; background: url(../images/top_chat.png) no-repeat 0 0; text-indent: -9999px; overflow: hidden;}
+
+/* 주메뉴 */
+nav.gnb {position: absolute; width: 100%; top: 115px;}
+nav.gnb > ul {width: 100%; display: flex; justify-content: space-around;}
+
+/* 메뉴 li 6개 */
+nav.gnb>ul>li{flex:1;line-height:77px; text-align:center;}
+nav.gnb>ul>li>a{display:block; height:77px; color:#201e00; font-size:18px; position:relative; transition:color 0.3s linear 0s; letter-spacing: 0;}
+nav.gnb>ul>li>a::after{content:""; position:absolute; left:0; top:50%; transform:translateY(-50%); width:2px; height:14px; background:#8f8f8f;}
+nav.gnb>ul>li:first-child>a::after{display:none;}
+
+/* 메뉴 호버했을 때 */
+nav.gnb>ul>li:hover>a{color:#dc2d34;}
+nav.gnb>ul>li>a::before{content:""; position:absolute; bottom:0; left:50%; width:0; height:0; opacity: 0; transform: translateX(-50%);  background:#dc2d34; transition: width 300ms linear 0s;}
+nav.gnb>ul>li:hover>a::before{width:100%; height:4px; opacity: 1;}
+
+/* 하위 메뉴 div*/
+.gnb>ul>li>div{display: none; position: absolute; left: 0; width: 100%;}
+.gnb > ul > li.on > div {display: block;}
+
+/* 하위 ul */
+.sub {display: flex; justify-content: space-between; margin-top: 40px;}
+/* 하위ul > 각 li */
+.sub > li {flex: 1; display: inline-block; vertical-align: top; text-align: left; border-right: 1px solid #ddd; padding: 0 30px; line-height: 35px; letter-spacing: 0px; height: 220px;}
+.sub > li > a{display: block; color: #dc2d34; font-size: 17px; font-weight: bold; margin-bottom: 7px;}
+.sub > li > ul > li > a{color: #333;}
+.sub > li:last-of-type{border: none; padding-right: 0;}
+
+/* 첫번째 소개 li */
+.sub > li:first-of-type{flex: 1.5;} 
+.sub > li:first-of-type > p{font-size: 23px; font-weight: bold; margin-bottom: 6px; letter-spacing: 1px;}
+.sub > li:first-of-type > span:first-of-type{display: block; font-size: 37px; font-weight: bolder; margin-bottom: 20px; letter-spacing: 1px;}
+.sub > li:first-of-type > span:last-of-type{display: block; line-height: 22px; font-size: 15px;}
+
+/* gnb 버튼 */
+.gnb_button{display: flex; justify-content: space-between; margin-top: 20px;}
+.gnb_button>a{flex: 1; display: inline-block; border: 1px solid #bbb; padding: 5px 0; margin: 10px; line-height: 55px; font-size: 17px; letter-spacing: 1px; background: url(../images/gnb_btn.png) no-repeat 75% 47%; padding-right: 15px; transition: all 0.3s;}
+.gnb_button > a:hover
+{background-color: #ddd;}
+
+/* 홍보센터 마지막 li */
+.gnb > ul > li:nth-of-type(5) > div > .sub > li:last-of-type{ padding-right: 50px;}
+
+/* 고객서비스 li */
+.gnb > ul > li:last-of-type > div > .sub > li:first-of-type {flex: 1.5;}
+.gnb > ul > li:last-of-type > div > .sub > li:last-of-type {flex: 3.8;}
+/* 고객서비스 gnb */
+.gnb > ul > li:last-of-type > div > .gnb_button > a{flex: 1; display: inline-block; border: 1px solid #bbb; padding: 5px 0; margin: 10px 15px 10px  0; line-height: 55px; font-size: 17px; letter-spacing: 1px; background: url(../images/gnb_btn.png) no-repeat 63% 47%; padding-right: 15px; transition: all 0.3s;}
+.gnb > ul > li:last-of-type > div > .gnb_button > a:last-child{margin-right: 0;}
+.gnb > ul > li:last-of-type > div > .gnb_button > a:hover
+{background-color: #ddd;}
+
+}
